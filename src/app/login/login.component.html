@@ -15,7 +15,8 @@
             class="form-control" [(ngModel)]="password"/>
         </div>
         <div class="btn-container">
-            <button class="btn btn-dark">Login</button>
+            <div class="error">{{errorMessage}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
         </div>
     </div>
 </div>
